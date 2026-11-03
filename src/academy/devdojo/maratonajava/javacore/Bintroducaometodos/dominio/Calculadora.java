@@ -26,5 +26,22 @@ public class Calculadora {
         System.out.println("Dentro alteraDoisNumeros");
         System.out.println("n1:" + n1);
         System.out.println("n2:" + n2);
+
+    }
+
+    public void somaArray (int[] numeros){
+        int soma = 0;
+        for (int i: numeros) {
+            soma += i;
+        }
+        System.out.println(soma);
+    }
+
+    public void somaVarArgs (int... numeros){
+        int soma = 0;
+        for (int i: numeros) {
+            soma += i;
+        }
+        System.out.println(soma);
     }
 }
